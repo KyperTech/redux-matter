@@ -25,7 +25,7 @@ export function signup(signupData) {
   console.log('Signup action called.', signupData);
   return {
     [CALL_MATTER]: {
-      types: [ SIGNUP_ATTEMPT, SIGNUP_RESPONSE, SIGNUP_FAILURE ],
+      types: [ SIGNUP_REQUEST, SIGNUP_SUCCESS, SIGNUP_FAILURE ],
       method: 'signup',
       callData: signupData,
       schema: Schemas.ACCOUNT
@@ -40,7 +40,7 @@ export const LOGOUT_FAILURE = 'LOGOUT_FAILURE';
 export function logout() {
   return {
     [CALL_MATTER]: {
-      types: [ LOGOUT_ATTEMPT, LOGOUT_RESPONSE, LOGOUT_ERR ],
+      types: [ LOGOUT_REQUEST, LOGOUT_SUCCESS, LOGOUT_FAILURE ],
       method: 'logout',
       schema: Schemas.ACCOUNT
     }

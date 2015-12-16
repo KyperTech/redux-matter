@@ -1,6 +1,6 @@
 {
   "name": "redux-matter",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Redux tools for matter.",
   "main": "lib/index.js",
   "scripts": {
@@ -40,7 +40,7 @@
   },
   "dependencies": {
     "humps": "^1.0.0",
-    "kyper-matter": "^0.1.6",
+    "kyper-matter": "^0.1.7",
     "lodash": "^3.10.1",
     "normalizr": "^1.4.0"
   }

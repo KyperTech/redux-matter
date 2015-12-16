@@ -15,17 +15,15 @@ export function account(state = {
   case LOGIN_REQUEST:
     return merge({}, state, {isFetching: true});
   case LOGIN_SUCCESS:
-    console.log('login response in reducer', action);
     return merge({}, state, {isFetching: false, id: action.response.result});
   case SIGNUP_REQUEST:
     return merge({}, state, {isFetching: true});
   case SIGNUP_SUCCESS:
-    console.log('signup response', action);
     return merge({}, state, {isFetching: false, id: action.response.result});
   case LOGOUT_REQUEST:
-    return merge({}, state, {isFetching: true});
+    return merge({}, state, {isFetching: true, id: null});
   case LOGOUT_SUCCESS:
-    return merge({}, {isFetching: false});
+    return merge({}, {isFetching: false, id: null});
   default:
     return state;
   }
