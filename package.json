@@ -4,8 +4,8 @@
   "description": "Redux middleware for matter",
   "main": "lib/index.js",
   "scripts": {
-    "compile": "babel src --out-dir lib",
-    "prepublish": "rimraf lib && npm run compile",
+    "build": "babel src --out-dir lib",
+    "prepublish": "rimraf lib && npm run build",
     "test": "mocha --compilers js:babel-core/register --reporter spec test/*.js"
   },
   "repository": {
@@ -26,8 +26,7 @@
   },
   "homepage": "https://github.com/KyperTech/redux-matter#readme",
   "devDependencies": {
-    "babel": "^6.1.18",
-    "babel-cli": "^6.2.0",
+    "babel-cli": "^6.3.17",
     "babel-core": "^6.2.1",
     "babel-eslint": "^5.0.0-beta4",
     "babel-plugin-add-module-exports": "^0.1.1",

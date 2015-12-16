@@ -1,17 +1,25 @@
 /** Matter Singleton
  */
 
-import MatterInstance from 'kyper-matter';
+import Middleware from './middleware';
+import MatterInstance from './matter';
 
-//Create singleton instance of Matter using project name
 let matter;
-export default function(matterName, matterOptions) {
-  //TODO: Handle being passed a matter instance
+export function createMiddleware(matterName, matterOptions) {
+  //Create singleton instance of Matter using provided project name and options
   matter = new MatterInstance(matterName, matterOptions);
+  //Return middleware (which imports the new matter instance)
+  return Middleware;
 }
+//Create new matter instance
+export function createMatter(matterName, matterOptions) {
+  //TODO: Handle being passed a matter instance
+  return matter = new MatterInstance(matterName, matterOptions);
+}
+//Export matter instance
 export function getMatter() {
   return matter;
 }
-export const logger = matter.utils.logger;
-export const dom = matter.utils.dom;
-export const storage = matter.utils.envStorage;
+
+export * as Reducers from './reducers';
+export * as Actions from './actions';

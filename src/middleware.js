@@ -3,10 +3,10 @@ import { Schema, arrayOf, normalize } from 'normalizr'
 import { camelizeKeys } from 'humps'
 import { getMatter } from './index';
 
-let matter = getMatter();
 // Fetches an API response and normalizes the result JSON according to schema.
 // This makes every API response have the same shape, regardless of how nested it was.
 function callMatter(method, schema, callData) {
+  let matter = getMatter();
   return matter[method](callData).then((response) => {
     const camelizedJson = camelizeKeys(response)
     return Object.assign({},
