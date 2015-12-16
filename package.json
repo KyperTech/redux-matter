@@ -1,7 +1,7 @@
 {
   "name": "redux-matter",
   "version": "0.0.1",
-  "description": "Redux middleware for matter",
+  "description": "Redux tools for matter.",
   "main": "lib/index.js",
   "scripts": {
     "build": "babel src --out-dir lib",
