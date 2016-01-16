@@ -1,13 +1,12 @@
 {
   "name": "redux-matter",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Redux tools for matter.",
   "main": "lib/index.js",
   "scripts": {
-    "compile": "babel src --out-dir lib",
-    "build": "npm run compile",
-    "watch": "babel src --out-dir lib --watch",
-    "prepublish": "rimraf lib && npm test && npm run build",
+    "build": "babel src --out-dir lib",
+    "watch": "npm run build -- --watch",
+    "prepublish": "rimraf lib && npm run build",
     "test": "mocha --compilers js:babel-core/register --reporter spec test/*.js"
   },
   "repository": {
@@ -25,7 +24,7 @@
     "kyper",
     "react"
   ],
-  "author": "Kyper LLC <kyper.dev@gmail.com>",
+  "author": "Kyper Digital Inc. <kyper.dev@gmail.com>",
   "contributors": [
     {
       "name": "Scott Prue",
