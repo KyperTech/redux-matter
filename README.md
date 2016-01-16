@@ -1,22 +1,10 @@
 # Redux Matter
-<p align="center">
-  <!-- Npm Version -->
-  <a href="https://npmjs.org/package/redux-matter">
-    <img src="https://img.shields.io/npm/v/redux-matter.svg" alt="npm version">
-  </a>
-  <!-- Build Status -->
-  <a href="https://travis-ci.org/KyperTech/redux-matter">
-    <img title="Build Status" src="https://travis-ci.org/KyperTech/redux-matter.svg">
-  </a>
-  <!-- Dependency Status -->
-  <a href="https://david-dm.org/KyperTech/redux-matter">
-    <img src="https://david-dm.org/KyperTech/redux-matter.svg" alt="dependency status">
-  </a>
-  <!-- License -->
-  <a href="https://github.com/KyperTech/redux-matter/blob/master/LICENSE">
-    <img src="https://img.shields.io/npm/l/redux-matter.svg" alt="license">
-  </a>
-</p>
+[![npm version](https://img.shields.io/npm/v/redux-matter.svg?style=flat-square)](https://www.npmjs.com/package/redux-matter)
+[![npm downloads](https://img.shields.io/npm/dm/redux-matter.svg?style=flat-square)](https://www.npmjs.com/package/redux-matter)
+[![build status](https://img.shields.io/travis/KyperTech/redux-matter/master.svg?style=flat-square)](https://travis-ci.org/KyperTech/redux-matter)
+[![dependencies status](https://img.shields.io/david/KyperTech/redux-matter/master.svg?style=flat-square)](https://david-dm.org/KyperTech/redux-matter)
+[![license](https://img.shields.io/npm/l/redux-matter.svg?style=flat-square)](https://github.com/KyperTech/matter/blob/master/LICENSE)
+
 Redux middleware, actions, and reducer for [Matter](https://github.com/kypertech/matter).
 
 
@@ -26,7 +14,7 @@ Redux middleware, actions, and reducer for [Matter](https://github.com/kypertech
 
 ```javascript
 import { createStore, applyMiddleware, compose } from 'redux';
-import rootReducer from '../reducers'; // Cobined reducers
+import rootReducer from '../reducers'; // Combined reducers
 import thunkMiddleware from 'redux-thunk';
 import { createMiddleware } from 'redux-matter';
 

@@ -8,3 +8,6 @@ branches:
     - master
 sudo: false
 script: "npm test"
+addons:
+  code_climate:
+    repo_token: 2ad089728fbd537ae0edeedc46730921fe0cf991e930288085254b181236c301
